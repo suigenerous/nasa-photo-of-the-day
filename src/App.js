@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
-import mainImage from './MainImage'
+import MainImage from './MainImage'
+import {API_KEY, BASE_URL} from './Constants'
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <{MainImage}/>
+      <MainImage/>
     </div>
   );
 }
 
-export default App;
+
